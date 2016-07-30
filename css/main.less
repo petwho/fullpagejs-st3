@@ -1,0 +1,92 @@
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3,
+#section4{
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{
+	background-image: url(images/bg.png);
+	padding: 30% 0 0 0;
+}
+#section1 {
+	background-image: url(images/bg.png);
+	padding: 15% 0 0 0;
+}
+#section2{
+	background-image: url(images/bg.png);
+	padding: 15% 0 0 0;
+}
+#section3{
+	background-image: url(images/bg.png);
+	padding: 15% 0 0 0;
+}
+#section4{
+	background-image: url(images/bg.png);
+	padding: 15% 0 0 0;
+}
+
+/* Custom styles */
+body {
+	font-size: 13px;
+	color: #333;
+}
+@screen-sm-min: 768px;
+@media (min-width: 900px) {
+	.container {
+		width: 900px;
+	}
+}
+header {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	color: #333;
+	font-weight: bold;
+	font-size: 20px;
+	z-index: 9999;
+	span {
+		display: block;
+		margin-top: -10px;
+	}
+}
+@media (max-width: @screen-sm-min) {
+	header {
+		font-size: 15px;
+		top: 15px;
+		left: 15px;
+		span {
+			margin-top: -8px;
+		}
+	}
+}
+h3 {
+	font-size: 15px;
+	font-weight: 700;
+}
+a, a:hover, a:active, a:focus {
+	color: #333;
+	text-decoration: none;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+.form-control, .btn {
+	border: 2px solid #333;
+	border-radius: 0;
+}
+input.form-control {
+	padding: 20px 10px;
+}
+.scroller {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
