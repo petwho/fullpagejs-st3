@@ -13,7 +13,7 @@ function assetSrc($file) {
 	<title>Smaller than three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +35,6 @@ function assetSrc($file) {
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
-	<!-- <script type="text/javascript" src="/js/examples.js"></script> -->
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -75,7 +74,6 @@ function assetSrc($file) {
 <header>
 	<a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a>
 </header>
-
 
 <div id="fullpage">
 	<div class="section" id="section-home">
@@ -200,7 +198,11 @@ function assetSrc($file) {
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <div class="hidden">
+    	<img src="/img/bg_art_md.jpg" alt="">
+    	<img src="/img/bg_art_xs.jpg" alt="">
+    </div>
 </div>
 </body>
 </html>
