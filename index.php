@@ -1,3 +1,8 @@
+<?php
+function assetSrc($file) {
+	return $file.'?'.filemtime(__DIR__.'/'.$file);
+}
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -16,8 +21,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/jquery.fullpage.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/main.css'); ?>" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
