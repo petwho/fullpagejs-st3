@@ -1,34 +1,35 @@
 /* Backgrounds will cover all the section
 * --------------------------------------- */
-#section0,
-#section1,
-#section2,
-#section3,
-#section4{
+#section-home,
+#section-about,
+#section-artworks,
+#section-details,
+#section-contact{
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 /* Defining each sectino background and styles
 * --------------------------------------- */
-#section0{
-	background-image: url(images/bg.png);
+#section-home {
+	background-image: url(/img/bg_home.jpg);
 	padding: 30% 0 0 0;
 }
-#section1 {
-	background-image: url(images/bg.png);
+#section-about {
+	background-image: url(/img/bg.png);
 	padding: 15% 0 0 0;
 }
-#section2{
-	background-image: url(images/bg.png);
+#section-artworks {
+	background-image: url(/img/bg_art_md.jpg);
+	padding: 15% 0 0 0;
+	background-position: 0 -50px;
+}
+#section-details {
+	background-image: url(/img/bg.png);
 	padding: 15% 0 0 0;
 }
-#section3{
-	background-image: url(images/bg.png);
-	padding: 15% 0 0 0;
-}
-#section4{
-	background-image: url(images/bg.png);
+#section-contact {
+	background-image: url(/img/bg.png);
 	padding: 15% 0 0 0;
 }
 
@@ -36,6 +37,7 @@
 body {
 	font-size: 13px;
 	color: #333;
+	letter-spacing: 1px;
 }
 @screen-sm-min: 768px;
 @media (min-width: 900px) {
@@ -55,15 +57,41 @@ header {
 		display: block;
 		margin-top: -10px;
 	}
+	&.white {
+		a, a:hover, a:active, a:focus {
+			color: #fff;
+		}
+	}
+}
+.lang {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	color: rgba(255, 255, 255, .5);
+	a {
+		color: rgba(255, 255, 255, .5);
+		&.active {
+			color: rgb(255, 255, 255);
+		}
+	}
 }
 @media (max-width: @screen-sm-min) {
 	header {
 		font-size: 15px;
-		top: 15px;
-		left: 15px;
+		top: 24px;
+		left: 24px;
 		span {
 			margin-top: -8px;
 		}
+	}
+	.lang {
+		top: 24px;
+		right: 24px;
+	}
+	#section-artworks {
+		background-image: url(/img/bg_art_xs.jpg);
+		padding: 15% 0 0 0;
+		background-position: 0 -50px;
 	}
 }
 h3 {
@@ -81,12 +109,126 @@ a, a:hover, a:active, a:focus {
 .form-control, .btn {
 	border: 2px solid #333;
 	border-radius: 0;
+	&.form-control:focus {
+		// border-color: #dfdfdf !important;
+		border-color: rgba(51,51,51,.6);
+		box-shadow: none !important;
+	}
+	&.btn-submit {
+		width: 50%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		&:hover, &:focus, &:active {
+			border-color: #333;
+			box-shadow: none !important;
+		}
+	}
 }
 input.form-control {
 	padding: 20px 10px;
+}
+::-webkit-input-placeholder {
+   opacity: .5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   opacity: .5;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   opacity: .5;
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+}
+keyframes bounce {
+	from {
+		// color: rgba(247,247,247,0.2);
+		top: 0;
+		opacity: .5;
+	}
+	to {
+		opacity: 1;
+		top: 10px;
+	}
+}
+@-moz-keyframes bounce {
+	from {
+		// color: rgba(247,247,247,0.2);
+		top: 0;
+		opacity: .5;
+	}
+	to {
+		opacity: 1;
+		top: 10px;
+	}
+}
+@-webkit-keyframes bounce {
+	from {
+		// color: rgba(247,247,247,0.2);
+		top: 0;
+		opacity: .5;
+	}
+	to {
+		opacity: 1;
+		top: 10px;
+	}
 }
 .scroller {
 	position: absolute;
 	bottom: 20px;
 	width: 100%;
+	.icon {
+		position: relative;
+		background-image: url(/img/down-arrow.jpg);
+		background-size: cover;
+		height: 30px;
+		width: 66px;
+		display: block;
+		margin: auto;
+		color: #333;
+		-webkit-animation: bounce .7s linear infinite alternate;
+		-moz-animation: bounce .7s linear infinite alternate;
+		-o-animation: bounce .7s linear infinite alternate;
+		-ms-animation: bounce .7s linear infinite alternat
+	}
+}
+#fp-nav {
+	&.white {
+		ul {
+			li {
+				a {
+					span {
+						background: #fff;
+						border-color: #fff;
+					}
+					&.active {
+						span {
+							background: transparent;
+							border: 1px solid #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	ul {
+		li {
+			a {
+				span {
+					background: #333;
+				}
+			}
+			a.active {
+				span {
+					background: transparent;
+					border: 1px solid #333;
+				}
+			}
+		}
+	}
+	.fp-tooltip {
+		color: #fff !important;
+	}
 }
