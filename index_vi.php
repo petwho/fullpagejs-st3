@@ -117,6 +117,9 @@ We enhance our customers living experience with the beauty of accessories; we ad
 								<strong>Nosbyn</strong>
 								77 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
 							</address>
+							<h3>FOLLOW US</h3>
+							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree</a></div>
+							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree</a></div>
 						</div>
 					</div>
 				</div>

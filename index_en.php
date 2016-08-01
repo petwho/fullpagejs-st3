@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<h3>ABOUT SMALLER THEN THREE</h3>
+					<h3>ABOUT SMALLER THAN THREE</h3>
 					<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
 Being one of the first few concept stores in Vietnam, we help our customers to celebrate the aesthetics of everyday living, starting with our surrounding items. We focus on the modernity, classiness and simplicity of our product lines, which delivers high quality standard with an inspirational imprint of Vietnam. <br>
 We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
@@ -37,7 +37,155 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section-artworks"></div>
+	<div class="section" id="section-artworks">
+		<div class="container container-artwork visible-lg">
+			<div class="row">
+				<div class="col-lg-1 col-lg-2-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-lg-1 col-lg-2-4">
+					<div class="row">
+						<div class="col-lg-12">
+							<img class="fullwidth" src="/img/2.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-lg-12">
+							<img class="fullwidth" src="/img/3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-lg-2-4">
+					<img class="fullwidth" src="/img/4.jpg" alt="">
+				</div>
+				<div class="col-lg-1 col-lg-2-4">
+					<div class="row">
+						<div class="col-lg-12">
+							<img class="fullwidth" src="/img/5.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-lg-12">
+							<img class="fullwidth" src="/img/6.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-lg-2-4">
+					<img class="fullwidth" src="/img/5.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container container-artwork visible-md">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/1.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row top">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/3.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/4.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/5.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/6.jpg" alt="">
+						</div>
+					</div>
+					<div class="row-gap-small"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<img class="fullwidth" src="/img/7.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container container-artwork visible-sm">
+			<div class="row">
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="row-gap-small"></div>
+			<div class="row">
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-sm-3">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container container-artwork visible-xs">
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="row-gap-small"></div>
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+			</div>
+			<div class="row-gap-small"></div>
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="fullwidth" src="/img/1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="section" id="section-details">
 		<div class="container">
 			<div class="row">
@@ -60,6 +208,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 					</p>
 					<p>
 						<strong>Frames</strong>
+						<br>
 						50 cm x 70 cm<br>
 						40 cm x 60 cm<br>
 						16 cm x 22 cm
@@ -74,7 +223,6 @@ We enhance our customers living experience with the beauty of accessories; we ad
 				<div class="col-xs-12 col-md-6 text-left">
 					<div class="row">
 						<div class="col-xs-12 col-md-6">
-							
 							<h3>OUR POPUP STORES</h3>
 							<address>
 								<strong>Thinker & Dreamer Coffee</strong>
@@ -89,12 +237,12 @@ We enhance our customers living experience with the beauty of accessories; we ad
 							</address>
 
 							<address>
-								<strong>Yen Concept</strong>
+								<strong>Nosbyn</strong>
 								<br>
-								60C Le Thi Rieng St, D1, Ho Chi Minh City, Vietnam<br>
+								77 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
 							</address>
 
-							<h3>FOLLOW US ON FACEBOOK</h3>
+							<h3>FOLLOW US</h3>
 							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree</a></div>
 							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree</a></div>
 						</div>

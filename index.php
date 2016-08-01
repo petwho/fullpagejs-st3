@@ -10,7 +10,7 @@ function assetSrc($file) {
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Smaller than three</title>
+	<title>Smaller Than Three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
@@ -84,7 +84,7 @@ function assetSrc($file) {
 </head>
 <body>
 <header>
-	<a href="/"><span class="separator">Smaller</span><span class="separator">Than</span><span class="separator">Three</span></a>
+	<a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a>
 </header>
 
 <?php if (@$_GET['lang'] == 'vi'): ?>
