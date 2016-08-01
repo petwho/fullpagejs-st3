@@ -2,6 +2,8 @@
 function assetSrc($file) {
 	return $file.'?'.filemtime(__DIR__.'/'.$file);
 }
+$lang = @$_GET['lang'];
+$langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -80,7 +82,7 @@ function assetSrc($file) {
 			// $('strong').animateCss('bounce');
 
 			$('.container-artwork img').click(function (argument) {
-				location.href = '/artwork.php?id=' + $(this).data('page');
+				location.href = '/artwork.php?id=' + $(this).data('page') + "<?php echo $langQuerySuff; ?>";
 			});
 		});
 	</script>
@@ -91,7 +93,7 @@ function assetSrc($file) {
 	<a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a>
 </header>
 
-<?php if (@$_GET['lang'] == 'vi'): ?>
+<?php if ($lang == 'vi'): ?>
 	<?php include('index_vi.php'); ?>
 <?php else: ?>
 	<?php include('index_en.php'); ?>
