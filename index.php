@@ -36,9 +36,11 @@ function assetSrc($file) {
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
-
+	<script src="/js/wow.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			// new WOW().init();
+
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 
@@ -61,10 +63,18 @@ function assetSrc($file) {
 			            }, 300);
 		            }
 
+		            // $('.wowme').addClass('wow bounceInUp');
+		            // new WOW().init();
+
 		            // if(index == 2 && direction == 'up'){
 		            //     $('#fp-nav').addClass('white');
 		            // }
-		        }
+		        },
+		        // afterLoad: function(anchorLink, index){
+	                // var $loadedSection = $(this);
+	                // $('.wow').addClass('wow bounceInUp').removeClass('hidden');
+	                // new WOW().init();
+	            // }
 			});
 			$('#fp-nav').addClass('white');
 			// $('strong').animateCss('bounce');

@@ -73,7 +73,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			<div class="row">
 				<div class="col-xs-12 col-md-6 text-left">
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-xs-12 col-md-6">
 							
 							<h3>OUR POPUP STORES</h3>
 							<address>

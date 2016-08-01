@@ -103,22 +103,20 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			<div class="row">
 				<div class="col-xs-12 col-md-6 text-left">
 					<div class="row">
-						<div class="col-xs-12">
-							<div class="col-xs-12 col-md-6 text-left">
-								<h3>SẢN PHẨM CÓ BÁN TẠI</h3>
-								<address>
-									<strong>Thinker & Dreamer Coffee</strong>
-									Lầu 3, 42 Nguyễn Huệ, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
-								</address>
-								<address>
-									<strong>Lam Boutique</strong>
-									98 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
-								</address>
-								<address>
-									<strong>Nosbyn</strong>
-									77 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
-								</address>
-							</div>
+						<div class="col-xs-12 col-md-6 text-left">
+							<h3>SẢN PHẨM CÓ BÁN TẠI</h3>
+							<address>
+								<strong>Thinker & Dreamer Coffee</strong>
+								Lầu 3, 42 Nguyễn Huệ, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
+							</address>
+							<address>
+								<strong>Lam Boutique</strong>
+								98 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
+							</address>
+							<address>
+								<strong>Nosbyn</strong>
+								77 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
+							</address>
 						</div>
 					</div>
 				</div>
