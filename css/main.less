@@ -299,3 +299,50 @@ keyframes iconbounce {
 		}
 	}
 }
+.container-artwork {
+	img {
+		cursor: pointer;
+	}
+}
+.artwork-detail {
+	background-size: cover;
+	color: #fff;
+	.row {
+		margin-top: 35%;
+	}
+	.fixed-right {
+		height: 100%;
+		right: 30px;
+		height: 100%;
+		position: absolute;
+		&.close-btn {
+			// position: relative;
+			top: 30px;
+			cursor: pointer;
+			z-index: 9999;
+			z-index: 9999;
+		}
+		&.next-btn {
+			top: 50%;
+			cursor: pointer;
+			z-index: 9999;
+			img {
+				height: 30px;
+				right: 30px;
+			}
+		}
+	}
+	.fixed-left {
+		position: absolute;
+		left: 30px;
+		&.previous-btn {
+			top: 50%;
+			cursor: pointer;
+			z-index: 9999;
+			img {
+				height: 30px;
+				right: 30px;
+			}
+		}
+	}
+}

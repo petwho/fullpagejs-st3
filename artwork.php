@@ -2,6 +2,12 @@
 function assetSrc($file) {
 	return $file.'?'.filemtime(__DIR__.'/'.$file);
 }
+$pageId = @$_GET['id'];
+if (!$pageId) {
+	header('Location: /artwork.php?id=1');
+} else if ($pageId > 7) {
+	header('Location: /artwork.php?id=1');
+}
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -46,9 +52,9 @@ function assetSrc($file) {
 
 				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 				css3:false,
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
+				// navigation: true,
+				// navigationPosition: 'right',
+				// navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
 		        onLeave: function(index, nextIndext){
 
 		            if(nextIndext == 1 || nextIndext == 3){
@@ -79,22 +85,39 @@ function assetSrc($file) {
 			$('#fp-nav').addClass('white');
 			// $('strong').animateCss('bounce');
 
-			$('.container-artwork img').click(function (argument) {
-				location.href = '/artwork.php?id=' + $(this).data('page');
-			});
+			
 		});
 	</script>
 
 </head>
-<body>
-<header>
-	<a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a>
-</header>
-
+<body class="artwork-detail" style="background-image: url(/img/bg_artwork/<?php echo @$_GET['id']; ?>.jpg">
+<div class="btn-wraper">
+	<a class="fixed-right close-btn" href="/"><img src="/img/close-btn.png" width="30" alt=""></a>
+	<?php if ($pageId == 1): ?>
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+			<img src="/img/next-btn.png">
+		</a>
+	<?php elseif (($pageId >= 2) &&  ($pageId < 7)): ?>
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+			<img src="/img/next-btn.png">
+		</a>
+		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo $pageId - 1; ?>">
+			<img src="/img/previous-btn.png">
+		</a>
+	<?php elseif ($pageId == 7): ?>
+		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo $pageId - 1; ?>">
+			<img src="/img/previous-btn.png">
+		</a>
+	<?php else: ?>
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+			<img src="/img/next-btn.png">
+		</a>
+	<?php endif; ?>
+</div>
 <?php if (@$_GET['lang'] == 'vi'): ?>
-	<?php include('index_vi.php'); ?>
+	<?php include('artwork_vi.php'); ?>
 <?php else: ?>
-	<?php include('index_en.php'); ?>
+	<?php include('artwork_en.php'); ?>
 <?php endif; ?>
 </body>
 </html>
