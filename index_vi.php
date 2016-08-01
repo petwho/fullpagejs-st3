@@ -69,18 +69,22 @@ We enhance our customers living experience with the beauty of accessories; we ad
 					<h3>KÍCH THƯỚC</h3>
 					<p>
 					<strong>Lịch bàn</strong>
+					<br>
 					20 cm x 20 cm
 					</p>
 					<p>
 					<strong>Sổ</strong>
+					<br>
 					14.8 cm x 22.3 cm
 					</p>
 					<p>
 					<strong>Bưu thiếp</strong>
+					<br>
 					12 cm x 17 cm
 					</p>
 					<p>
 					<strong>Khung:</strong>
+					<br>
 					50 cm x 70 cm<br>
 					40 cm x 60 cm<br>
 					16 cm x 22 cm
