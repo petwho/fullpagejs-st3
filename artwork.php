@@ -3,6 +3,9 @@ function assetSrc($file) {
 	return $file.'?'.filemtime(__DIR__.'/'.$file);
 }
 $pageId = @$_GET['id'];
+$lang = @$_GET['lang'];
+$langQuery = ($lang == 'vi') ? '?lang=vi' : '';
+$langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 if (!$pageId) {
 	header('Location: /artwork.php?id=1');
 } else if ($pageId > 7) {
@@ -92,29 +95,29 @@ if (!$pageId) {
 </head>
 <body class="artwork-detail" style="background-image: url(/img/bg_artwork/<?php echo @$_GET['id']; ?>.jpg">
 <div class="btn-wraper">
-	<a class="fixed-right close-btn" href="/"><img src="/img/close-btn.png" width="30" alt=""></a>
+	<a class="fixed-right close-btn" href="/<?php echo $langQuery; ?>"><img src="/img/close-btn.png" width="30" alt=""></a>
 	<?php if ($pageId == 1): ?>
-		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo ($pageId + 1).$langQuerySuff; ?>">
 			<img src="/img/next-btn.png">
 		</a>
 	<?php elseif (($pageId >= 2) &&  ($pageId < 7)): ?>
-		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo ($pageId + 1).$langQuerySuff; ?>">
 			<img src="/img/next-btn.png">
 		</a>
-		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo $pageId - 1; ?>">
+		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo ($pageId - 1).$langQuerySuff; ?>">
 			<img src="/img/previous-btn.png">
 		</a>
 	<?php elseif ($pageId == 7): ?>
-		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo $pageId - 1; ?>">
+		<a class="fixed-left previous-btn" href="artwork.php?id=<?php echo ($pageId - 1).$langQuerySuff; ?>">
 			<img src="/img/previous-btn.png">
 		</a>
 	<?php else: ?>
-		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo $pageId + 1; ?>">
+		<a class="fixed-right next-btn" href="artwork.php?id=<?php echo ($pageId + 1).$langQuerySuff; ?>">
 			<img src="/img/next-btn.png">
 		</a>
 	<?php endif; ?>
 </div>
-<?php if (@$_GET['lang'] == 'vi'): ?>
+<?php if ($lang == 'vi'): ?>
 	<?php include('artwork_vi.php'); ?>
 <?php else: ?>
 	<?php include('artwork_en.php'); ?>
