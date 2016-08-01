@@ -111,10 +111,12 @@ We enhance our customers living experience with the beauty of accessories; we ad
 							</address>
 							<address>
 								<strong>Lam Boutique</strong>
+								<br>
 								98 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
 							</address>
 							<address>
 								<strong>Nosbyn</strong>
+								<br>
 								77 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
 							</address>
 							<h3>FOLLOW US</h3>
