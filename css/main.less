@@ -41,7 +41,9 @@ body {
 	color: #333;
 	letter-spacing: 1px;
 }
+// @screen-xs-min: 768px;
 @screen-sm-min: 768px;
+@screen-md-min: 992px;
 @media (min-width: 900px) {
 	.container {
 		width: 900px;
@@ -90,10 +92,19 @@ header {
 		top: 15px;
 		right: 15px;
 	}
-	#section-artworks {
-		// background-image: url(/img/bg_art_xs.jpg);
-		// padding: 15% 0 0 0;
-		// background-position: 0 -50px;
+}
+@media (min-width: @screen-sm-min) {
+	header {
+		font-size: 24px;
+		top: 24px;
+		left: 24px;
+		span {
+			margin-top: -8px;
+		}
+	}
+	.lang {
+		top: 24px;
+		right: 24px;
 	}
 }
 h3 {
@@ -244,12 +255,21 @@ keyframes iconbounce {
 	height: 30px;
 	display: block;
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 	.container-artwork {
 		width: 100%;
 		> .row {
-			// margin-top: 10%;
 			top: -100px;
+			position: relative;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.container-artwork {
+		width: 100%;
+		> .row:first-child {
+			margin-top: 20%;
+			// top: -100px;
 			position: relative;
 		}
 	}
