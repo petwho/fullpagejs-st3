@@ -93,7 +93,7 @@ if (!$pageId) {
 	</script>
 
 </head>
-<body class="artwork-detail" style="background-image: url(/img/bg_artwork/<?php echo @$_GET['id']; ?>.jpg">
+<body class="artwork-detail" style="background-image: url(/img/bg_artwork/<?php echo @$_GET['id']; ?>.jpg);">
 <div class="btn-wraper">
 	<a class="fixed-right close-btn" href="/<?php echo $langQuery; ?>"><img src="/img/close-btn.png" width="30" alt=""></a>
 	<?php if ($pageId == 1): ?>
