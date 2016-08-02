@@ -51,8 +51,8 @@ body {
 }
 header {
 	position: fixed;
-	top: 50px;
-	left: 50px;
+	top: 24px;
+	// left: 50px;
 	color: #333;
 	font-weight: bold;
 	font-size: 20px;
@@ -81,11 +81,17 @@ header {
 }
 @media (max-width: @screen-sm-min) {
 	header {
-		font-size: 15px;
+		// font-size: 15px;
 		top: 15px;
 		left: 15px;
-		span {
-			margin-top: -8px;
+		// span {
+		// 	margin-top: -8px;
+		// }
+		.logo {
+			width: auto;
+			height: 45px;
+			// top: 15px;
+			left: 15px;
 		}
 	}
 	.lang {
@@ -95,16 +101,29 @@ header {
 }
 @media (min-width: @screen-sm-min) {
 	header {
-		font-size: 24px;
+		// font-size: 24px;
+		// top: 24px;
+		// left: 24px;
+		// span {
+		// 	margin-top: -8px;
+		// }
+		left: 25px;
 		top: 24px;
-		left: 24px;
-		span {
-			margin-top: -8px;
+		.logo {
+			width: auto;
+			height: 65px;
+			top: 15px;
+			left: 15px;
 		}
 	}
 	.lang {
 		top: 24px;
 		right: 24px;
+	}
+}
+@media (min-width: @screen-md-min) {
+	header {
+		left: 35px;
 	}
 }
 h3 {

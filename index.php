@@ -90,7 +90,8 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 </head>
 <body>
 <header>
-	<a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a>
+	<!-- <a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a> -->
+	<a href="/"><img class="logo" src="/img/logo.png" alt="Smaller Than Three Logo"></a>
 </header>
 
 <?php if ($lang == 'vi'): ?>
