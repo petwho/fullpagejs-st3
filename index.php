@@ -56,7 +56,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				navigationPosition: 'right',
 				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
 		        onLeave: function(index, nextIndext){
-		            if(nextIndext == 1 || nextIndext == 3){
+		            if(nextIndext == 1 || nextIndext == 3 || nextIndext == 4){
 		                // $('#fp-nav, header').addClass('white');
 		                setTimeout(function () {
 			                $('#fp-nav').addClass('white');
