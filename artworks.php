@@ -1,4 +1,4 @@
-<div class="section" id="section-artworks">
+<div class="section section-index-3" id="section-artworks">
 	<div class="container container-artwork visible-md visible-lg">
 		<div class="row">
 			<div class="col-md-1 col-md-2-4">

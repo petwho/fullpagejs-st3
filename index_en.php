@@ -1,5 +1,5 @@
 <div id="fullpage">
-	<div class="section" id="section-home">
+	<div class="section section-index-1" id="section-home">
 		<div class="container">
 			<div class="fix lang">
 				<a href="/index.php?lang=vi"<?php echo @$_GET['lang'] == 'vi' ? ' class="active"' : '' ?>>VN</a>
@@ -19,7 +19,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section-about">
+	<div class="section section-index-2" id="section-about">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
@@ -39,7 +39,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 		</div>
 	</div>
 	<?php include('./artworks.php'); ?>
-	<div class="section" id="section-details">
+	<div class="section section-index-4" id="section-details">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
@@ -70,7 +70,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section-contact">
+	<div class="section section-index-5" id="section-contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">

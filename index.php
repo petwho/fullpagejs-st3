@@ -56,7 +56,6 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				navigationPosition: 'right',
 				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
 		        onLeave: function(index, nextIndext){
-
 		            if(nextIndext == 1 || nextIndext == 3){
 		                // $('#fp-nav, header').addClass('white');
 		                setTimeout(function () {
@@ -69,6 +68,8 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 			            }, 300);
 		            }
 
+	            	$('.section').find('p, h3, address, form, a').css({top: 'auto', opacity: 0});
+
 		            // $('.wowme').addClass('wow bounceInUp');
 		            // new WOW().init();
 
@@ -77,9 +78,13 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		            // }
 		        },
 		        afterLoad: function(anchorLink, index){
+	        		// $('body').find('p, h3').removeClass('animated');
 	                var $loadedSection = $(this);
+	                $loadedSection.find('p, h3, address, form, a').css({'position': 'relative', 'opacity': 0}).animate({
+	                	opacity: 1,
+	                	top: '15px',
+	                }, 300);
 	                // $(this).css({transform: 'translate3d(0px, -768px, 0px)'});
-	                // $(this).addClass('fp-easing');
 	                // $('.wow').addClass('wow bounceInUp').removeClass('hidden');
 	                // new WOW().init();
 	            }
