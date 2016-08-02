@@ -29,6 +29,7 @@ Being one of the first few concept stores in Vietnam, we help our customers to c
 We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
 </p>
 				</div>
+				<div class="col-hack col-md-1 visible-md visible-lg visible-sm"></div>
 				<div class="col-xs-12 col-md-6">
 					<h3>LÁ COLLECTION</h3>
 					<p>"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
@@ -37,243 +38,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section-artworks">
-		<div class="container container-artwork visible-lg visible-sm visible-md visible-lg">
-			<div class="row">
-				<div class="col-sm-1 col-sm-2-4">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-sm-1 col-sm-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-1 col-sm-2-4">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-				<div class="col-sm-1 col-sm-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-1 col-sm-2-4">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-xs">
-			<div class="row">
-				<div class="col-xs-4">
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="row top">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-4">
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="container container-artwork visible-lg">
-			<div class="row">
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-md">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row top">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- <div class="container container-artwork visible-sm">
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-xs">
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-				</div>
-			</div>
-		</div> -->
-	</div>
+	<?php include('./artworks.php'); ?>
 	<div class="section" id="section-details">
 		<div class="container">
 			<div class="row">
@@ -308,9 +73,9 @@ We enhance our customers living experience with the beauty of accessories; we ad
 	<div class="section" id="section-contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-6 text-left">
+				<div class="col-xs-12 col-md-6">
 					<div class="row">
-						<div class="col-xs-12 col-md-6">
+						<div class="col-xs-12">
 							<h3>OUR POPUP STORES</h3>
 							<address>
 								<strong>Thinker & Dreamer Coffee</strong>
@@ -331,13 +96,13 @@ We enhance our customers living experience with the beauty of accessories; we ad
 							</address>
 
 							<h3>FOLLOW US</h3>
-							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree</a></div>
-							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree</a></div>
+							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree.vn</a></div>
+							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree.vn</a></div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-md-6 text-left">
+				<div class="col-xs-12 col-md-6">
 					<h3>TELL US WHAT YOU THINK</h3>
 					<form action="/" method="POST">
 						<div class="form-group">

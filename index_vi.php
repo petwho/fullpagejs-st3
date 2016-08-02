@@ -29,6 +29,7 @@ Being one of the first few concept stores in Vietnam, we help our customers to c
 We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
 </p>
 				</div>
+				<div class="col-hack col-md-1 visible-md visible-lg visible-sm"></div>
 				<div class="col-xs-12 col-md-6">
 					<h3>BỘ SƯU TẬP LÁ</h3>
 					<p>"Lá với tôi không chỉ là cơ quan sinh dưỡng của cây mà màu xanh của nó đã nuôi nấng tâm hồn tôi bằng những kỷ niệm… Tôi vẽ lá đu đủ, lá chuối, lá bồ đề, lá mướp, lá phượng, lá tía tô và nha đam không đơn giản bởi vẻ đẹp tự nhiên của nó mà ở mỗi chiếc lá còn cất giữ trong tôi những câu chuyện đẹp thuở ấu thơ… Mảnh sân nhỏ trước nhà, nụ cười của bà, đôi bàn tay của mẹ, những giọt mưa mùa hạ, những tia nắng cuối thu… Qua kẽ lá, những giấc mơ trong tôi còn nguyên mãi…" - Tim Phạm</p>
@@ -37,155 +38,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section-artworks">
-		<div class="container container-artwork visible-lg">
-			<div class="row">
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-lg-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-1 col-lg-2-4">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-md">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row top">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-						</div>
-					</div>
-					<div class="row-gap-small"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-sm">
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-				</div>
-				<div class="col-sm-3">
-					<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container container-artwork visible-xs">
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/1.jpg" data-page="1" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/2.jpg" data-page="2" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/3.jpg" data-page="3" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/4.jpg" data-page="4" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
-				</div>
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/6.jpg" data-page="6" alt="">
-				</div>
-			</div>
-			<div class="row-gap-small"></div>
-			<div class="row">
-				<div class="col-xs-4">
-					<img class="fullwidth" src="/img/7.jpg" data-page="7" alt="">
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php include('./artworks.php'); ?>
 	<div class="section" id="section-details">
 		<div class="container">
 			<div class="row">
@@ -255,7 +108,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			<div class="row">
 				<div class="col-xs-12 col-md-6 text-left">
 					<div class="row">
-						<div class="col-xs-12 col-md-6 text-left">
+						<div class="col-xs-12">
 							<h3>SẢN PHẨM CÓ BÁN TẠI</h3>
 							<address>
 								<strong>Thinker & Dreamer Coffee</strong>
@@ -272,8 +125,8 @@ We enhance our customers living experience with the beauty of accessories; we ad
 								77 Mạc Thị Bưởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam<br>
 							</address>
 							<h3>FOLLOW US</h3>
-							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree</a></div>
-							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree</a></div>
+							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree.vn</a></div>
+							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree.vn</a></div>
 						</div>
 					</div>
 				</div>
