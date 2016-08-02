@@ -23,7 +23,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="/css/animate.css">
+    <!-- <link rel="stylesheet" href="/css/animate.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/jquery.fullpage.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/main.css'); ?>" />
 
@@ -35,10 +35,11 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
 
+    <!-- <script src="/js/jquery.easings.min.js"></script> -->
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
-	<script src="/js/wow.min.js"></script>
+	<!-- <script src="/js/wow.min.js"></script> -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			// new WOW().init();
@@ -47,7 +48,10 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				verticalCentered: false,
 
 				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-				css3:false,
+				// css3: false,
+				css3: true,
+				// easing: 'easeInOutCubic',
+		        // easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
@@ -72,11 +76,13 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		            //     $('#fp-nav').addClass('white');
 		            // }
 		        },
-		        // afterLoad: function(anchorLink, index){
-	                // var $loadedSection = $(this);
+		        afterLoad: function(anchorLink, index){
+	                var $loadedSection = $(this);
+	                // $(this).css({transform: 'translate3d(0px, -768px, 0px)'});
+	                // $(this).addClass('fp-easing');
 	                // $('.wow').addClass('wow bounceInUp').removeClass('hidden');
 	                // new WOW().init();
-	            // }
+	            }
 			});
 			$('#fp-nav').addClass('white');
 			// $('strong').animateCss('bounce');
