@@ -2,9 +2,9 @@
 	<div class="section section-index-1" id="section-home">
 		<div class="container">
 			<div class="fix lang">
-				<a href="/index.php?lang=vi"<?php echo @$_GET['lang'] == 'vi' ? ' class="active"' : '' ?>>VN</a>
+				<a href="/index.php?lang=vi"<?php echo @$_GET['lang'] == 'vi' ? ' class="active"' : '' ?>VN</a>
 				/
-				<a href="/" <?php echo !isset($_GET['lang']) ? ' class="active"' : '' ?>>EN</a>
+				<a href="/" <?php echo !isset($_GET['lang']) ? ' class="active"' : '' ?>EN</a>
 			</div>
 		</div>
 		<div class="scroller row">
@@ -96,8 +96,8 @@ We enhance our customers living experience with the beauty of accessories; we ad
 							</address>
 
 							<h3>FOLLOW US</h3>
-							<div><a href="http://facebook.com/smallerthanthree">facebook.com/smallerthanthree.vn</a></div>
-							<div><a href="http://instagram.com/smallerthanthree">instagram.com/smallerthanthree.vn</a></div>
+							<div><a href="http://facebook.com/smallerthanthree.vn">facebook.com/smallerthanthree.vn</a></div>
+							<div><a href="http://instagram.com/smallerthanthree.vn">instagram.com/smallerthanthree.vn</a></div>
 						</div>
 					</div>
 				</div>
