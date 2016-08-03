@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-md-1 col-md-2-4">
-				<img class="fullwidth" src="/img/5.jpg" data-page="5" alt="">
+				<img class="fullwidth" src="/img/7.jpg" data-page="5" alt="">
 			</div>
 		</div>
 	</div>
