@@ -95,6 +95,12 @@ We enhance our customers living experience with the beauty of accessories; we ad
 								77 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
 							</address>
 
+							<address>
+							<strong>Ren</strong>
+							<br>
+							2A Nguyen Thiep St, D1, Ho Chi Minh City, Vietnam
+							</address>
+
 							<h3>FOLLOW US</h3>
 							<div><a href="http://facebook.com/smallerthanthree.vn">facebook.com/smallerthanthree.vn</a></div>
 							<div><a href="http://instagram.com/smallerthanthree.vn">instagram.com/smallerthanthree.vn</a></div>
