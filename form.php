@@ -12,8 +12,8 @@ if (isset($_POST['email'])) {
 
 	$result = $mailgun->sendMessage($domain, array(
 	    'from'    => 'noreply@smallerthanthree.com',
-	    'to'      => 'timthuanpham@gmail.com',
-	    // 'to'      => 'trankhanh.tk.kt@gmail.com',
+	    // 'to'      => 'timthuanpham@gmail.com',
+	    'to'      => 'trankhanh.tk.kt@gmail.com',
 	    'subject' => 'Customer Contact',
 	    'html'    => 'Name: '.@$_POST['name'].'<br>'.'Email: '.@$_POST['email'].'<br>'.'Content: '.@$_POST['content'],
 	));
