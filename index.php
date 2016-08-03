@@ -92,7 +92,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 			            }, 300);
 		            }
 
-	            	$('.section').find('p, h3, address, form, a.link').css({top: 'auto', opacity: 0});
+	            	$('.section').find('p, h3, address, form, a.link, .alert').css({top: 'auto', opacity: 0});
 
 		            // $('.wowme').addClass('wow bounceInUp');
 		            // new WOW().init();
@@ -104,7 +104,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		        afterLoad: function(anchorLink, index){
 	        		// $('body').find('p, h3').removeClass('animated');
 	                var $loadedSection = $(this);
-	                $loadedSection.find('p, h3, address, form, a.link').css({'position': 'relative', 'opacity': 0}).animate({
+	                $loadedSection.find('p, h3, address, form, a.link, .alert').css({'position': 'relative', 'opacity': 0}).animate({
 	                	opacity: 1,
 	                	top: '15px',
 	                }, 300);
