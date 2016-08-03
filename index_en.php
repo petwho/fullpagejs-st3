@@ -110,12 +110,13 @@ We enhance our customers living experience with the beauty of accessories; we ad
 
 				<div class="col-xs-12 col-md-6">
 					<h3>TELL US WHAT YOU THINK</h3>
+					<div class="alert alert-warning hidden" role="alert">Thank you for contacting us!</div>
 					<form action="/" method="POST">
 						<div class="form-group">
-							<input type="text" class="form-control" id="inputName" placeholder="your name">
+							<input type="text" name="name" class="form-control" id="inputName" placeholder="your name">
 						</div>
 						<div class="form-group">
-							<input type="email" class="form-control" id="inputEmail1" placeholder="your e-mail">
+							<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="your e-mail">
 						</div>
 						<div class="form-group">
 							<textarea class="form-control" name="content" id="inputContent" cols="5" rows="5" placeholder="your message"></textarea>

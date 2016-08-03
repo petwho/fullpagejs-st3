@@ -1,4 +1,5 @@
 <?php
+include('./form.php');
 function assetSrc($file) {
 	return $file.'?'.filemtime(__DIR__.'/'.$file);
 }
@@ -42,7 +43,30 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<!-- <script src="/js/wow.min.js"></script> -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// new WOW().init();
+			$('form').submit(function (e) {
+				var $button = $(this).find('button');
+				var $name = $(this).find('input[name="name"]');
+				var $email = $(this).find('input[name="email"]');
+				var $content = $(this).find('textarea[name="content"]');
+
+				$button.prop('disabled', true);
+				$.ajax({
+					method: 'POST',
+					url: '/form.php',
+					data: {
+						name: $name.val(),
+						email: $email.val(),
+						content: $content.val(),
+					}
+				}).success(function () {
+					$('.alert.hidden').removeClass('hidden');
+					$name.val('');
+					$email.val('');
+					$content.val('');
+					$button.prop('disabled', false);
+				});
+				e.preventDefault();
+			});
 
 			$('#fullpage').fullpage({
 				verticalCentered: false,
@@ -104,7 +128,6 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<!-- <a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a> -->
 	<a href="/"><img class="logo" src="/img/logo.png" alt="Smaller Than Three Logo"></a>
 </header>
-
 <?php if ($lang == 'vi'): ?>
 	<?php include('index_vi.php'); ?>
 <?php else: ?>
