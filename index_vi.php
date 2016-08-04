@@ -155,12 +155,4 @@ We enhance our customers living experience with the beauty of accessories; we ad
 			</div>
 		</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <div class="hidden">
-    	<img src="/img/bg_art_md.jpg" alt="">
-    	<img src="/img/bg_art_xs.jpg" alt="">
-    </div>
 </div>

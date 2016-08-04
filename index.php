@@ -82,11 +82,11 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 			            }, 300);
 		            }
 
-	            	$('.section').find('p, h3, address, form, a.link, .alert').css({top: 'auto', opacity: 0});
+	            	$('.section').find('.animate').css({top: 'auto', opacity: 0});
 		        },
 		        afterLoad: function(anchorLink, index){
 	                var $loadedSection = $(this);
-	                $loadedSection.find('p, h3, address, form, a.link, .alert').css({
+	                $loadedSection.find('.animate').css({
 	                	'position': 'relative',
 	                	'opacity': 0
 	                }).animate({
@@ -117,5 +117,9 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 <?php else: ?>
 	<?php include('index_en.php'); ?>
 <?php endif; ?>
+<div class="hidden">
+	<img src="/img/bg_art_md.jpg" alt="">
+	<img src="/img/bg_art_xs.jpg" alt="">
+</div>
 </body>
 </html>
