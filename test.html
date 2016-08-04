@@ -9,7 +9,7 @@
 	<title>Smaller Than Three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="/css/nanoscroller.css"> -->
+    <link rel="stylesheet" href="/css/nanoscroller.css">
     <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,16 +36,15 @@
     <!-- <script src="/js/jquery.easings.min.js"></script> -->
 	<!-- <script type="text/javascript" src="/js/jquery.fullpage.js"></script> -->
 	<script src="/js/jquery.nanoscroller.min.js"></script>
+	<style type="text/css">
+		.nano {
+			width: 100px;
+			height: 100px;
+		}
+	</style>
 	<script type="text/javascript">
 		var disUpId, disDownId, $fullpage, nanoClass;
 		$(document).ready(function() {
-			if ($('#check-sm-screen').is(':visible')) {
-				if ($('#check-ip6').is(':visible')) {
-		            nanoClass = '.nano:not(".disable-ip6")';
-				} else {
-		            nanoClass = '.nano';
-				}
-	        }
 	        $('.nano').nanoScroller();
 	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
 			// $('#fullpage').fullpage({
@@ -141,7 +140,7 @@
 
 </head>
 <body>
-<div class="container disable-ip6">
+<div class="container">
 	<div class="row">
 		<div class="nano">
 			<div class="nano-content">

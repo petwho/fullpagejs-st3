@@ -71,58 +71,62 @@ We enhance our customers living experience with the beauty of accessories; we ad
 		</div>
 	</div>
 	<div class="section section-index-5" id="section-contact">
-		<div class="container nano">
-			<div class="row nano-content">
-				<div class="col-xs-12 col-md-6">
-					<div class="row">
-						<div class="col-xs-12">
-							<h3>OUR POPUP STORES</h3>
-							<address>
-								<strong>Thinker & Dreamer Coffee</strong>
-								<br>
-								3rd floor, 42 Nguyen Hue Blvd, D1, Ho Chi Minh City, Vietnam<br>
-							</address>
+		<div class="container">
+			<div class="row">
+				<div class="nano">
+					<div class="nano-content">
+						<div class="col-xs-12 col-md-6">
+							<div class="row">
+								<div class="col-xs-12">
+									<h3>OUR POPUP STORES</h3>
+									<address>
+										<strong>Thinker & Dreamer Coffee</strong>
+										<br>
+										3rd floor, 42 Nguyen Hue Blvd, D1, Ho Chi Minh City, Vietnam<br>
+									</address>
 
-							<address>
-								<strong>Lam Boutique</strong>
-								<br>
-								98 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
-							</address>
+									<address>
+										<strong>Lam Boutique</strong>
+										<br>
+										98 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
+									</address>
 
-							<address>
-								<strong>Nosbyn</strong>
-								<br>
-								77 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
-							</address>
+									<address>
+										<strong>Nosbyn</strong>
+										<br>
+										77 Mac Thi Buoi St, D1, Ho Chi Minh City, Vietnam<br>
+									</address>
 
-							<address>
-							<strong>Ren</strong>
-							<br>
-							2A Nguyen Thiep St, D1, Ho Chi Minh City, Vietnam
-							</address>
+									<address>
+									<strong>Ren</strong>
+									<br>
+									2A Nguyen Thiep St, D1, Ho Chi Minh City, Vietnam
+									</address>
 
-							<h3>FOLLOW US</h3>
-							<div><a class="link" href="http://facebook.com/smallerthanthree.vn">facebook.com/smallerthanthree.vn</a></div>
-							<div><a class="link" href="http://instagram.com/smallerthanthree.vn">instagram.com/smallerthanthree.vn</a></div>
+									<h3>FOLLOW US</h3>
+									<div><a class="link" href="http://facebook.com/smallerthanthree.vn">facebook.com/smallerthanthree.vn</a></div>
+									<div><a class="link" href="http://instagram.com/smallerthanthree.vn">instagram.com/smallerthanthree.vn</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6">
+							<h3>TELL US WHAT YOU THINK</h3>
+							<div class="alert alert-warning hidden" role="alert">Thank you for contacting us!</div>
+							<form action="/" method="POST">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control" id="inputName" placeholder="your name">
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="your e-mail">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="content" id="inputContent" cols="5" rows="5" placeholder="your message"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default text-bold pull-right btn-submit">SEND</button>
+							</form>
 						</div>
 					</div>
-				</div>
-
-				<div class="col-xs-12 col-md-6">
-					<h3>TELL US WHAT YOU THINK</h3>
-					<div class="alert alert-warning hidden" role="alert">Thank you for contacting us!</div>
-					<form action="/" method="POST">
-						<div class="form-group">
-							<input type="text" name="name" class="form-control" id="inputName" placeholder="your name">
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="your e-mail">
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" name="content" id="inputContent" cols="5" rows="5" placeholder="your message"></textarea>
-						</div>
-						<button type="submit" class="btn btn-default text-bold pull-right btn-submit">SEND</button>
-					</form>
 				</div>
 			</div>
 		</div>
