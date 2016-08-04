@@ -16,7 +16,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<title>Smaller Than Three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="/css/nanoscroller.css"> -->
+    <link rel="stylesheet" href="/css/nanoscroller.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,6 +35,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<script src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
 	<script type="text/javascript">
+		// var disUpId, disDownId, $fullpage, nanoClass;
 		$(document).ready(function() {
 			$('form').submit(function (e) {
 				var $button = $(this).find('button');
