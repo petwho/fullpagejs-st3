@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smaller Than Three</title>
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/css/nanoscroller.css"> -->
+    <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link rel="stylesheet" href="/css/animate.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.css?1469945426" /> -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css?1470317480" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+
+	<script src="/js/jquery.min.js"></script>
+    <!-- <script src="/js/jquery.easings.min.js"></script> -->
+	<!-- <script type="text/javascript" src="/js/jquery.fullpage.js"></script> -->
+	<script src="/js/jquery.nanoscroller.min.js"></script>
+	<script type="text/javascript">
+		var disUpId, disDownId, $fullpage, nanoClass;
+		$(document).ready(function() {
+			if ($('#check-sm-screen').is(':visible')) {
+				if ($('#check-ip6').is(':visible')) {
+		            nanoClass = '.nano:not(".disable-ip6")';
+				} else {
+		            nanoClass = '.nano';
+				}
+	        }
+	        $('.nano').nanoScroller();
+	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
+			// $('#fullpage').fullpage({
+			// 	verticalCentered: false,
+
+			// 	//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+			// 	css3: true,
+			// 	navigation: true,
+			// 	navigationPosition: 'right',
+			// 	navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
+		 //        onLeave: function(index, nextIndext) {
+		 //        	// $(nanoClass).find('.nano-content').css({overflow: 'hidden'});
+		 //        	// $(nanoClass).find('.nano-content').css({overflowY: 'scroll'});
+		 //        	// $(nanoClass).nanoScroller();
+		 //            if(nextIndext == 1 || nextIndext == 3 || nextIndext == 4){
+		 //                // $('#fp-nav, header').addClass('white');
+		 //                setTimeout(function () {
+			//                 $('#fp-nav').addClass('white');
+		 //                }, 300);
+		 //            } else {
+			//             // $('#fp-nav, header').removeClass('white');
+			//             setTimeout(function () {
+			// 	            $('#fp-nav').removeClass('white');
+			//             }, 300);
+		 //            }
+
+	  //           	$('.section').find('p, h3, address, form, a.link, .alert').css({top: 'auto', opacity: 0});
+   //          		if ($('#check-sm-screen').is(':visible')) {
+	  //   	        	if (nextIndext == 2 || nextIndext == 5) {
+	  //   		        	$(nanoClass).bind("scrollend", function(e){
+	  //   		        		console.log('scrollend')
+	  //   		        		disUpId = setTimeout(function () {
+	  //   		        	        $fullpage.setAllowScrolling(false, 'up');
+	  //   		        	        $fullpage.setAllowScrolling(true, 'down');
+	  //   		        		}, 800);
+	  //   		        	});
+
+	  //   		        	$(nanoClass).bind("scrolltop", function(e){
+	  //   		        		console.log('scrolltop')
+	  //   		        		disDownId = setTimeout(function () {
+	  //   		        	        $fullpage.setAllowScrolling(false, 'down');
+	  //   		        	        $fullpage.setAllowScrolling(true, 'up');
+	  //   		        		}, 800);
+	  //   		        	});
+	  //   	        	}
+			//             if ((nextIndext == 2) && !$('#check-ip6').is(':visible')){
+			//             	if (index == 1) {
+			// 	                $fullpage.setAllowScrolling(true, 'up');
+			// 	                $fullpage.setAllowScrolling(false, 'down');
+			//             	} else if (index == 3) {
+			// 	            	$fullpage.setAllowScrolling(true, 'down');
+			// 	            	$fullpage.setAllowScrolling(false, 'up');
+			// 	            }
+			//             } else if (nextIndext == 5){
+	  //                   	if (index == 4) {
+	  //       	                $fullpage.setAllowScrolling(true, 'up');
+	  //       	                $fullpage.setAllowScrolling(false, 'down');
+	  //                   	}
+	  //                   } else {
+	  //                   	$(nanoClass).unbind("scrollend");
+	  //                   	$(nanoClass).unbind("scrolltop");
+	  //                   	clearTimeout(disUpId);
+	  //                   	clearTimeout(disDownId);
+	  //                   	console.log('enable up down');
+	  //                   	if ($fullpage) {
+			//             		$fullpage.setAllowScrolling(true, 'up');
+			//             		$fullpage.setAllowScrolling(true, 'down');
+	  //                   	}
+	  //   	            }
+   //  	            }
+		 //        },
+		 //        afterLoad: function(anchorLink, index){
+	  //               var $loadedSection = $(this);
+	  //             //   if ((index != 2) && (index != 5) && $fullpage) {
+	  //           		// $fullpage.setAllowScrolling(true);
+	  //             //   }
+	  //               $loadedSection.find('p, h3, address, form, a.link, .alert').css({'position': 'relative', 'opacity': 0}).animate({
+	  //               	opacity: 1,
+	  //               	top: '15px',
+	  //               }, 300);
+	  //           }
+			// });
+
+			// $fullpage = $.fn.fullpage;
+
+			// $('#fp-nav').addClass('white');
+
+			$('.container-artwork img').click(function (argument) {
+				location.href = '/artwork.php?id=' + $(this).data('page') + "";
+			});
+		});
+	</script>
+
+</head>
+<body>
+<div class="container disable-ip6">
+	<div class="row">
+		<div class="nano">
+			<div class="nano-content">
+				<div class="col-xs-12 col-md-6">
+					<h3>ABOUT SMALLER THAN THREE</h3>
+					<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
+		Being one of the first few concept stores in Vietnam, we help our customers to celebrate the aesthetics of everyday living, starting with our surrounding items. We focus on the modernity, classiness and simplicity of our product lines, which delivers high quality standard with an inspirational imprint of Vietnam. <br>
+		We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
+		</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h3>LÁ COLLECTION</h3>
+					<p>"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
+					<!-- <p>Lá với tôi không chỉ là cơ quan sinh dưỡng của cây mà màu xanh của nó đã nuôi nấng tâm hồn tôi bằng những kỷ niệm… tôi vẽ lá đu đủ, lá chuối, lá bồ đề, lá mướp, lá phượng, lá tía tô và nha đam không đơn giản bởi vẻ đẹp tự nhiên của nó mà ở mỗi chiếc lá còn cất giữ trong tôi những câu chuyện đẹp thuở ấu thơ… mảnh sân nhỏ trước nhà, nụ cười của bà, đôi bàn tay của mẹ, những giọt mưa mùa hạ, những tia nắng cuối thu… qua kẽ lá, những giấc mơ trong tôi còn nguyên mãi…</p> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
