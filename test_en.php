@@ -76,20 +76,20 @@
 	<div class="section section-index-5" id="section-contact">
 		<div class="container nano">
 			<div class="row nano-content">
-							<div class="animate">
-								<div class="col-xs-12 col-md-6">
-									<h3>ABOUT SMALLER THAN THREE</h3>
-									<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
-				Being one of the first few concept stores in Vietnam, we help our customers to celebrate the aesthetics of everyday living, starting with our surrounding items. We focus on the modernity, classiness and simplicity of our product lines, which delivers high quality standard with an inspirational imprint of Vietnam. <br>
-				We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
-				</p>
-								</div>
-								<div class="col-hack col-md-1 visible-md visible-lg visible-sm"></div>
-								<div class="col-xs-12 col-md-6">
-									<h3>LÁ COLLECTION</h3>
-									<p>"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
-								</div>
-							</div>
+				<div class="animate">
+					<div class="col-xs-12 col-md-6">
+						<h3>ABOUT SMALLER THAN THREE</h3>
+						<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
+	Being one of the first few concept stores in Vietnam, we help our customers to celebrate the aesthetics of everyday living, starting with our surrounding items. We focus on the modernity, classiness and simplicity of our product lines, which delivers high quality standard with an inspirational imprint of Vietnam. <br>
+	We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
+	</p>
+					</div>
+					<div class="col-hack col-md-1 visible-md visible-lg visible-sm"></div>
+					<div class="col-xs-12 col-md-6">
+						<h3>LÁ COLLECTION</h3>
+						<p>"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
