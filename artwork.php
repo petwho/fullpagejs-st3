@@ -22,7 +22,6 @@ if (!$pageId) {
 	<title>Smaller Than Three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,12 +32,6 @@ if (!$pageId) {
     <link rel="stylesheet" href="/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/jquery.fullpage.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo assetSrc('/css/main.css'); ?>" />
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -55,40 +48,20 @@ if (!$pageId) {
 
 				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 				css3:false,
-				// navigation: true,
-				// navigationPosition: 'right',
-				// navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
 		        onLeave: function(index, nextIndext){
 
 		            if(nextIndext == 1 || nextIndext == 3){
-		                // $('#fp-nav, header').addClass('white');
 		                setTimeout(function () {
 			                $('#fp-nav').addClass('white');
 		                }, 300);
 		            } else {
-			            // $('#fp-nav, header').removeClass('white');
 			            setTimeout(function () {
 				            $('#fp-nav').removeClass('white');
 			            }, 300);
 		            }
-
-		            // $('.wowme').addClass('wow bounceInUp');
-		            // new WOW().init();
-
-		            // if(index == 2 && direction == 'up'){
-		            //     $('#fp-nav').addClass('white');
-		            // }
 		        },
-		        // afterLoad: function(anchorLink, index){
-	                // var $loadedSection = $(this);
-	                // $('.wow').addClass('wow bounceInUp').removeClass('hidden');
-	                // new WOW().init();
-	            // }
 			});
 			$('#fp-nav').addClass('white');
-			// $('strong').animateCss('bounce');
-
-			
 		});
 	</script>
 
