@@ -42,31 +42,33 @@
 	<?php include('./artworks.php'); ?>
 	<div class="section" id="section-details">
 		<div class="container">
-			<div class="row animate">
-				<div class="col-xs-12 col-md-6">
-					<h3>KÍCH THƯỚC</h3>
-					<p>
-					<strong>Lịch bàn</strong>
-					<br>
-					20 cm x 20 cm
-					</p>
-					<p>
-					<strong>Sổ</strong>
-					<br>
-					14.8 cm x 22.3 cm
-					</p>
-					<p>
-					<strong>Bưu thiếp</strong>
-					<br>
-					12 cm x 17 cm
-					</p>
-					<p>
-					<strong>Khung:</strong>
-					<br>
-					50 cm x 70 cm<br>
-					40 cm x 60 cm<br>
-					16 cm x 22 cm
-					</p>
+			<div class="row">
+				<div class="animate">
+					<div class="col-xs-12 col-md-6">
+						<h3>KÍCH THƯỚC</h3>
+						<p>
+						<strong>Lịch bàn</strong>
+						<br>
+						20 cm x 20 cm
+						</p>
+						<p>
+						<strong>Sổ</strong>
+						<br>
+						14.8 cm x 22.3 cm
+						</p>
+						<p>
+						<strong>Bưu thiếp</strong>
+						<br>
+						12 cm x 17 cm
+						</p>
+						<p>
+						<strong>Khung:</strong>
+						<br>
+						50 cm x 70 cm<br>
+						40 cm x 60 cm<br>
+						16 cm x 22 cm
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

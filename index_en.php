@@ -42,31 +42,33 @@
 	<?php include('./artworks.php'); ?>
 	<div class="section section-index-4" id="section-details">
 		<div class="container">
-			<div class="row animate">
-				<div class="col-xs-12 col-md-6">
-					<h3>DIMENSIONS</h3>
-					<p>
-						<strong>Calendar</strong>
-						<br>
-						<span>20 cm x 20 cm</span>
-					</p>
-					<p>
-						<strong>Sketchbook</strong>
-						<br>
-						<span>14.8 cm x 22.3 cm</span>
-					</p>
-					<p>
-						<strong>Postcard</strong>
-						<br>
-						<span>12 cm x 17 cm</span>
-					</p>
-					<p>
-						<strong>Frames</strong>
-						<br>
-						50 cm x 70 cm<br>
-						40 cm x 60 cm<br>
-						16 cm x 22 cm
-					</p>
+			<div class="row">
+				<div class="animate">
+					<div class="col-xs-12 col-md-6">
+						<h3>DIMENSIONS</h3>
+						<p>
+							<strong>Calendar</strong>
+							<br>
+							<span>20 cm x 20 cm</span>
+						</p>
+						<p>
+							<strong>Sketchbook</strong>
+							<br>
+							<span>14.8 cm x 22.3 cm</span>
+						</p>
+						<p>
+							<strong>Postcard</strong>
+							<br>
+							<span>12 cm x 17 cm</span>
+						</p>
+						<p>
+							<strong>Frames</strong>
+							<br>
+							50 cm x 70 cm<br>
+							40 cm x 60 cm<br>
+							16 cm x 22 cm
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
