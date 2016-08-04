@@ -82,9 +82,9 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 			            }, 300);
 		            }
 
-	            	$('.section').find('.animate').css({top: 'auto', opacity: 0});
 		        },
 		        afterLoad: function(anchorLink, index){
+	            	$('.animate').css({top: 'auto', opacity: 0});
 	                var $loadedSection = $(this);
 	                $loadedSection.find('.animate').css({
 	                	'position': 'relative',
