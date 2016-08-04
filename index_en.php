@@ -32,7 +32,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 				<div class="col-hack col-md-1 visible-md visible-lg visible-sm"></div>
 				<div class="col-xs-12 col-md-6">
 					<h3>LÁ COLLECTION</h3>
-					<p style="padding-bottom: 50px;">"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
+					<p>"Leaves have great impacts on our lives in many ways. They fuel plant life, offer shelter to small wildlife and create a living environment for microorganism. Personally, the color green has raised my soul with unforgettable memories. My subject matter is the fresh color green –from papaya, banana, sacred fig, sponge gourd, flame tree, shiso and aloe vera leaf – a truly inspiring essence of natural beauty. As I was painting these leaves, I was on a journey revisiting the stories that lie within each leaf.  Our little front yard, my grandmother’s smile, my mother’s hands, the first drop of summer rain, and the late autumn sunray captured through the spirit of the fresh color green are what keeps my dreams forever intact." - Tim Pham</p>
 					<!-- <p>Lá với tôi không chỉ là cơ quan sinh dưỡng của cây mà màu xanh của nó đã nuôi nấng tâm hồn tôi bằng những kỷ niệm… tôi vẽ lá đu đủ, lá chuối, lá bồ đề, lá mướp, lá phượng, lá tía tô và nha đam không đơn giản bởi vẻ đẹp tự nhiên của nó mà ở mỗi chiếc lá còn cất giữ trong tôi những câu chuyện đẹp thuở ấu thơ… mảnh sân nhỏ trước nhà, nụ cười của bà, đôi bàn tay của mẹ, những giọt mưa mùa hạ, những tia nắng cuối thu… qua kẽ lá, những giấc mơ trong tôi còn nguyên mãi…</p> -->
 				</div>
 			</div>
@@ -111,7 +111,7 @@ We enhance our customers living experience with the beauty of accessories; we ad
 				<div class="col-xs-12 col-md-6">
 					<h3>TELL US WHAT YOU THINK</h3>
 					<div class="alert alert-warning hidden" role="alert">Thank you for contacting us!</div>
-					<form action="/" method="POST" style="padding-bottom: 50px;">
+					<form action="/" method="POST">
 						<div class="form-group">
 							<input type="text" name="name" class="form-control" id="inputName" placeholder="your name">
 						</div>
