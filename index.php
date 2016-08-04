@@ -82,7 +82,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 			            }, 300);
 		            }
 	            	$('.animate').css({top: 'auto', opacity: 0});
-
+	            	// $('.animate').addClass('reset');
 		        },
 		        afterLoad: function(anchorLink, index){
 	                var $loadedSection = $(this);
@@ -106,8 +106,6 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 
 </head>
 <body>
-<div id="check-sm-screen" class="visible-xs"></div>
-<div id="check-ip6"></div>
 <header>
 	<!-- <a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a> -->
 	<a href="/"><img class="logo" src="/img/logo.png" alt="Smaller Than Three Logo"></a>
