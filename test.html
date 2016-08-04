@@ -39,6 +39,7 @@
 	<script type="text/javascript">
 		var disUpId, disDownId, $fullpage, nanoClass;
 		$(document).ready(function() {
+	        $('.nano').nanoScroller();
 	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
 			$('#fullpage').fullpage({
 				verticalCentered: false,
@@ -125,9 +126,9 @@
 
 			// $('#fp-nav').addClass('white');
 
-			$('#fullpage').css({touchAction: 'auto'})
-
-	        $('.nano').nanoScroller();
+			$('.container-artwork img').click(function (argument) {
+				location.href = '/artwork.php?id=' + $(this).data('page') + "";
+			});
 		});
 	</script>
 

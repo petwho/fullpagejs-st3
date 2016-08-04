@@ -77,7 +77,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		            nanoClass = '.nano';
 				}
 	        }
-	        $(nanoClass).nanoScroller();
+	        // $(nanoClass).nanoScroller();
 	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
 			$('#fullpage').fullpage({
 				verticalCentered: false,
@@ -87,6 +87,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
+				normalScrollElements: '.nano',
 		        onLeave: function(index, nextIndext) {
 		        	// $(nanoClass).find('.nano-content').css({overflow: 'hidden'});
 		        	// $(nanoClass).find('.nano-content').css({overflowY: 'scroll'});
@@ -104,49 +105,49 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		            }
 
 	            	$('.section').find('p, h3, address, form, a.link, .alert').css({top: 'auto', opacity: 0});
-            		if ($('#check-sm-screen').is(':visible')) {
-	    	        	if (nextIndext == 2 || nextIndext == 5) {
-	    		        	$(nanoClass).bind("scrollend", function(e){
-	    		        		console.log('scrollend')
-	    		        		disUpId = setTimeout(function () {
-	    		        	        $fullpage.setAllowScrolling(false, 'up');
-	    		        	        $fullpage.setAllowScrolling(true, 'down');
-	    		        		}, 800);
-	    		        	});
+            		// if ($('#check-sm-screen').is(':visible')) {
+	    	        // 	if (nextIndext == 2 || nextIndext == 5) {
+	    		       //  	$(nanoClass).bind("scrollend", function(e){
+	    		       //  		console.log('scrollend')
+	    		       //  		disUpId = setTimeout(function () {
+	    		       //  	        $fullpage.setAllowScrolling(false, 'up');
+	    		       //  	        $fullpage.setAllowScrolling(true, 'down');
+	    		       //  		}, 800);
+	    		       //  	});
 
-	    		        	$(nanoClass).bind("scrolltop", function(e){
-	    		        		console.log('scrolltop')
-	    		        		disDownId = setTimeout(function () {
-	    		        	        $fullpage.setAllowScrolling(false, 'down');
-	    		        	        $fullpage.setAllowScrolling(true, 'up');
-	    		        		}, 800);
-	    		        	});
-	    	        	}
-			            if ((nextIndext == 2) && !$('#check-ip6').is(':visible')){
-			            	if (index == 1) {
-				                $fullpage.setAllowScrolling(true, 'up');
-				                $fullpage.setAllowScrolling(false, 'down');
-			            	} else if (index == 3) {
-				            	$fullpage.setAllowScrolling(true, 'down');
-				            	$fullpage.setAllowScrolling(false, 'up');
-				            }
-			            } else if (nextIndext == 5){
-	                    	if (index == 4) {
-	        	                $fullpage.setAllowScrolling(true, 'up');
-	        	                $fullpage.setAllowScrolling(false, 'down');
-	                    	}
-	                    } else {
-	                    	$(nanoClass).unbind("scrollend");
-	                    	$(nanoClass).unbind("scrolltop");
-	                    	clearTimeout(disUpId);
-	                    	clearTimeout(disDownId);
-	                    	console.log('enable up down');
-	                    	if ($fullpage) {
-			            		$fullpage.setAllowScrolling(true, 'up');
-			            		$fullpage.setAllowScrolling(true, 'down');
-	                    	}
-	    	            }
-    	            }
+	    		       //  	$(nanoClass).bind("scrolltop", function(e){
+	    		       //  		console.log('scrolltop')
+	    		       //  		disDownId = setTimeout(function () {
+	    		       //  	        $fullpage.setAllowScrolling(false, 'down');
+	    		       //  	        $fullpage.setAllowScrolling(true, 'up');
+	    		       //  		}, 800);
+	    		       //  	});
+	    	        // 	}
+			           //  if ((nextIndext == 2) && !$('#check-ip6').is(':visible')){
+			           //  	if (index == 1) {
+				          //       $fullpage.setAllowScrolling(true, 'up');
+				          //       $fullpage.setAllowScrolling(false, 'down');
+			           //  	} else if (index == 3) {
+				          //   	$fullpage.setAllowScrolling(true, 'down');
+				          //   	$fullpage.setAllowScrolling(false, 'up');
+				          //   }
+			           //  } else if (nextIndext == 5){
+	             //        	if (index == 4) {
+	        	    //             $fullpage.setAllowScrolling(true, 'up');
+	        	    //             $fullpage.setAllowScrolling(false, 'down');
+	             //        	}
+	             //        } else {
+	             //        	$(nanoClass).unbind("scrollend");
+	             //        	$(nanoClass).unbind("scrolltop");
+	             //        	clearTimeout(disUpId);
+	             //        	clearTimeout(disDownId);
+	             //        	console.log('enable up down');
+	             //        	if ($fullpage) {
+			           //  		$fullpage.setAllowScrolling(true, 'up');
+			           //  		$fullpage.setAllowScrolling(true, 'down');
+	             //        	}
+	    	        //     }
+    	         //    }
 		        },
 		        afterLoad: function(anchorLink, index){
 	                var $loadedSection = $(this);
