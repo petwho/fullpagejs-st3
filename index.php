@@ -81,14 +81,14 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				            $('#fp-nav').removeClass('white');
 			            }, 300);
 		            }
+	            	$('.animate').css({top: 'auto', opacity: 0});
 
 		        },
 		        afterLoad: function(anchorLink, index){
-	            	$('.animate').css({top: 'auto', opacity: 0});
 	                var $loadedSection = $(this);
 	                $loadedSection.find('.animate').css({
-	                	'position': 'relative',
-	                	'opacity': 0
+	                	position: 'relative',
+	                	opacity: 0,
 	                }).animate({
 	                	opacity: 1,
 	                	top: '15px',
