@@ -104,8 +104,8 @@ We enhance our customers living experience with the beauty of accessories; we ad
 		</div>
 	</div>
 	<div class="section" id="section-contact">
-		<div class="container">
-			<div class="row">
+		<div class="container nano">
+			<div class="row nano-content">
 				<div class="col-xs-12 col-md-6 text-left">
 					<div class="row">
 						<div class="col-xs-12">
