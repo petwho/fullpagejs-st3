@@ -81,18 +81,21 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				            $('#fp-nav').removeClass('white');
 			            }, 300);
 		            }
-	            	// $('.animate').css({top: 'auto', opacity: 0});
-	            	// $('.animate').addClass('reset');
+		            if (!$('#check-visible-xs').is(':visible')) {
+		            	$('.animate').css({top: 'auto', opacity: 0});
+		            }
 		        },
 		        afterLoad: function(anchorLink, index){
 	                var $loadedSection = $(this);
-	                // $loadedSection.find('.animate').css({
-	                // 	position: 'relative',
-	                // 	opacity: 0,
-	                // }).animate({
-	                // 	opacity: 1,
-	                // 	top: '15px',
-	                // }, 300);
+	                if (!$('#check-visible-xs').is(':visible')) {
+		                $loadedSection.find('.animate').css({
+		                	position: 'relative',
+		                	opacity: 0,
+		                }).animate({
+		                	opacity: 1,
+		                	top: '15px',
+		                }, 300);
+	                }
 	            }
 			});
 
@@ -115,6 +118,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 <?php else: ?>
 	<?php include('index_en.php'); ?>
 <?php endif; ?>
+<div id="check-visible-xs" class="visible-xs"></div>
 <div class="hidden">
 	<img src="/img/bg_art_md.jpg" alt="">
 	<img src="/img/bg_art_xs.jpg" alt="">
