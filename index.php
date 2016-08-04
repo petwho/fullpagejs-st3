@@ -16,6 +16,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<title>Smaller Than Three</title>
 	<!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/nanoscroller.css">
     <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,13 +36,15 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<![endif]-->
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
 
+	<script src="/js/jquery.min.js"></script>
     <!-- <script src="/js/jquery.easings.min.js"></script> -->
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
-	<!-- <script src="/js/wow.min.js"></script> -->
+	<script src="/js/jquery.nanoscroller.min.js"></script>
 	<script type="text/javascript">
+		var disUpId, disDownId, $fullpage, nanoClass;
 		$(document).ready(function() {
 			$('form').submit(function (e) {
 				var $button = $(this).find('button');
@@ -67,19 +70,27 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				});
 				e.preventDefault();
 			});
-
+			if ($('#check-sm-screen').is(':visible')) {
+				if ($('#check-ip6').is(':visible')) {
+		            nanoClass = '.nano:not(".disable-ip6")';
+				} else {
+		            nanoClass = '.nano';
+				}
+	        }
+	        $(nanoClass).nanoScroller();
+	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 
 				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
-				// css3: false,
 				css3: true,
-				// easing: 'easeInOutCubic',
-		        // easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['home', 'about', 'lá collection', 'details', 'contact'],
-		        onLeave: function(index, nextIndext){
+		        onLeave: function(index, nextIndext) {
+		        	// $(nanoClass).find('.nano-content').css({overflow: 'hidden'});
+		        	// $(nanoClass).find('.nano-content').css({overflowY: 'scroll'});
+		        	// $(nanoClass).nanoScroller();
 		            if(nextIndext == 1 || nextIndext == 3 || nextIndext == 4){
 		                // $('#fp-nav, header').addClass('white');
 		                setTimeout(function () {
@@ -93,28 +104,65 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 		            }
 
 	            	$('.section').find('p, h3, address, form, a.link, .alert').css({top: 'auto', opacity: 0});
+            		if ($('#check-sm-screen').is(':visible')) {
+	    	        	if (nextIndext == 2 || nextIndext == 5) {
+	    		        	$(nanoClass).bind("scrollend", function(e){
+	    		        		console.log('scrollend')
+	    		        		disUpId = setTimeout(function () {
+	    		        	        $fullpage.setAllowScrolling(false, 'up');
+	    		        	        $fullpage.setAllowScrolling(true, 'down');
+	    		        		}, 800);
+	    		        	});
 
-		            // $('.wowme').addClass('wow bounceInUp');
-		            // new WOW().init();
-
-		            // if(index == 2 && direction == 'up'){
-		            //     $('#fp-nav').addClass('white');
-		            // }
+	    		        	$(nanoClass).bind("scrolltop", function(e){
+	    		        		console.log('scrolltop')
+	    		        		disDownId = setTimeout(function () {
+	    		        	        $fullpage.setAllowScrolling(false, 'down');
+	    		        	        $fullpage.setAllowScrolling(true, 'up');
+	    		        		}, 800);
+	    		        	});
+	    	        	}
+			            if ((nextIndext == 2) && !$('#check-ip6').is(':visible')){
+			            	if (index == 1) {
+				                $fullpage.setAllowScrolling(true, 'up');
+				                $fullpage.setAllowScrolling(false, 'down');
+			            	} else if (index == 3) {
+				            	$fullpage.setAllowScrolling(true, 'down');
+				            	$fullpage.setAllowScrolling(false, 'up');
+				            }
+			            } else if (nextIndext == 5){
+	                    	if (index == 4) {
+	        	                $fullpage.setAllowScrolling(true, 'up');
+	        	                $fullpage.setAllowScrolling(false, 'down');
+	                    	}
+	                    } else {
+	                    	$(nanoClass).unbind("scrollend");
+	                    	$(nanoClass).unbind("scrolltop");
+	                    	clearTimeout(disUpId);
+	                    	clearTimeout(disDownId);
+	                    	console.log('enable up down');
+	                    	if ($fullpage) {
+			            		$fullpage.setAllowScrolling(true, 'up');
+			            		$fullpage.setAllowScrolling(true, 'down');
+	                    	}
+	    	            }
+    	            }
 		        },
 		        afterLoad: function(anchorLink, index){
-	        		// $('body').find('p, h3').removeClass('animated');
 	                var $loadedSection = $(this);
+	              //   if ((index != 2) && (index != 5) && $fullpage) {
+	            		// $fullpage.setAllowScrolling(true);
+	              //   }
 	                $loadedSection.find('p, h3, address, form, a.link, .alert').css({'position': 'relative', 'opacity': 0}).animate({
 	                	opacity: 1,
 	                	top: '15px',
 	                }, 300);
-	                // $(this).css({transform: 'translate3d(0px, -768px, 0px)'});
-	                // $('.wow').addClass('wow bounceInUp').removeClass('hidden');
-	                // new WOW().init();
 	            }
 			});
+
+			$fullpage = $.fn.fullpage;
+
 			$('#fp-nav').addClass('white');
-			// $('strong').animateCss('bounce');
 
 			$('.container-artwork img').click(function (argument) {
 				location.href = '/artwork.php?id=' + $(this).data('page') + "<?php echo $langQuerySuff; ?>";
@@ -124,6 +172,8 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 
 </head>
 <body>
+<div id="check-sm-screen" class="visible-xs"></div>
+<div id="check-ip6"></div>
 <header>
 	<!-- <a href="/"><span class="separator">smaller</span><span class="separator">than</span><span class="separator">three</span></a> -->
 	<a href="/"><img class="logo" src="/img/logo.png" alt="Smaller Than Three Logo"></a>

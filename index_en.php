@@ -20,8 +20,8 @@
 		</div>
 	</div>
 	<div class="section section-index-2" id="section-about">
-		<div class="container">
-			<div class="row">
+		<div class="container nano disable-ip6">
+			<div class="row nano-content">
 				<div class="col-xs-12 col-md-6">
 					<h3>ABOUT SMALLER THAN THREE</h3>
 					<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
@@ -71,8 +71,8 @@ We enhance our customers living experience with the beauty of accessories; we ad
 		</div>
 	</div>
 	<div class="section section-index-5" id="section-contact">
-		<div class="container">
-			<div class="row">
+		<div class="container nano">
+			<div class="row nano-content">
 				<div class="col-xs-12 col-md-6">
 					<div class="row">
 						<div class="col-xs-12">
