@@ -42,7 +42,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	<script src="/js/jquery.min.js"></script>
     <!-- <script src="/js/jquery.easings.min.js"></script> -->
 	<script type="text/javascript" src="/js/jquery.fullpage.js"></script>
-	<script src="/js/jquery.nanoscroller.min.js"></script>
+	<!-- <script src="/js/jquery.nanoscroller.min.js"></script> -->
 	<script type="text/javascript">
 		var disUpId, disDownId, $fullpage, nanoClass;
 		$(document).ready(function() {
@@ -70,13 +70,13 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				});
 				e.preventDefault();
 			});
-			if ($('#check-sm-screen').is(':visible')) {
-				if ($('#check-ip6').is(':visible')) {
-		            nanoClass = '.nano:not(".disable-ip6")';
-				} else {
-		            nanoClass = '.nano';
-				}
-	        }
+			// if ($('#check-sm-screen').is(':visible')) {
+			// 	if ($('#check-ip6').is(':visible')) {
+		 //            nanoClass = '.nano:not(".disable-ip6")';
+			// 	} else {
+		 //            nanoClass = '.nano';
+			// 	}
+	  //       }
 	        // $(nanoClass).nanoScroller();
 	        // $(nanoClass).find('.nano-content').css({paddingBottom: '15px'});
 			$('#fullpage').fullpage({
@@ -161,7 +161,7 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 	            }
 			});
 
-			$fullpage = $.fn.fullpage;
+			// $fullpage = $.fn.fullpage;
 
 			$('#fp-nav').addClass('white');
 
