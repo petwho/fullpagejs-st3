@@ -81,18 +81,18 @@ $langQuerySuff = ($lang == 'vi') ? '&lang=vi' : '';
 				            $('#fp-nav').removeClass('white');
 			            }, 300);
 		            }
-	            	$('.animate').css({top: 'auto', opacity: 0});
+	            	// $('.animate').css({top: 'auto', opacity: 0});
 	            	// $('.animate').addClass('reset');
 		        },
 		        afterLoad: function(anchorLink, index){
 	                var $loadedSection = $(this);
-	                $loadedSection.find('.animate').css({
-	                	position: 'relative',
-	                	opacity: 0,
-	                }).animate({
-	                	opacity: 1,
-	                	top: '15px',
-	                }, 300);
+	                // $loadedSection.find('.animate').css({
+	                // 	position: 'relative',
+	                // 	opacity: 0,
+	                // }).animate({
+	                // 	opacity: 1,
+	                // 	top: '15px',
+	                // }, 300);
 	            }
 			});
 
