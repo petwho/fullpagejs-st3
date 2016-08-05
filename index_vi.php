@@ -24,7 +24,7 @@
 			<div class="row nano-content">
 				<div class="animate">
 					<div class="col-xs-12 col-md-6">
-						<h3>ABOUT SMALLER THEN THREE</h3>
+						<h3>ABOUT SMALLER THAN THREE</h3>
 						<p><strong>Smaller Than Three</strong> is a concept brand introduced by Tim Pham.<br>
 						Being one of the first few concept stores in Vietnam, we help our customers to celebrate the aesthetics of everyday living, starting with our surrounding items. We focus on the modernity, classiness and simplicity of our product lines, which delivers high quality standard with an inspirational imprint of Vietnam. <br>
 						We enhance our customers living experience with the beauty of accessories; we add a little love into everything you have. 
